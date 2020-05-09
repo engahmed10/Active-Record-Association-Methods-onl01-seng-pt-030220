@@ -16,7 +16,7 @@ class Song < ActiveRecord::Base
     if self.artist_id == nil
       Artist.create(name: "Drake")
     else
-      self.artist=artist
+      self.artist=Artist.create(name: "Drake")
      end
 
   end
