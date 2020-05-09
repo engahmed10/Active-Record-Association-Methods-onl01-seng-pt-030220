@@ -17,7 +17,7 @@ class Song < ActiveRecord::Base
        Artist.create(name: "Drake")
 
      else
-       
+       self.artist ="Drake"
 
     end
 
