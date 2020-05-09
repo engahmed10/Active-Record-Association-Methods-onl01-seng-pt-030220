@@ -18,8 +18,8 @@ class Song < ActiveRecord::Base
       art=Artist.create(name: "Drake")
       self.artist=art
     else
-      art=Artist.find_by(name: "Drake")
-      self.artist=art
+      arti=Artist.find_by(name: "Drake")
+      self.artist=arti
     end
 
   end
