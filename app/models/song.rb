@@ -16,8 +16,6 @@ class Song < ActiveRecord::Base
     if self.artist_id == nil
       art=Artist.create(name: "Drake")
       self.artist=art
-    else
-      self.artist
     end
 
   end
