@@ -15,7 +15,7 @@ class Song < ActiveRecord::Base
     #
 
    artist=  Artist.find_or_create_by(name: "Drake")
-  self.artist=artist
+   self.artist=artist
 
 
   end
